@@ -34,3 +34,7 @@ p{
   background-color: white;
   color: grey;
 }
+input{
+  display: flex;
+  flex-direction: column;
+}
