@@ -5,4 +5,13 @@ class User {
   }
 }
 
-module.exports = {User}
+class Resumes {
+  constructor(userName,name,position,link){
+    this.userName = userName
+    this.name = name
+    this.position = position
+    this.link = link
+  }
+}
+
+module.exports = {User, Resumes}

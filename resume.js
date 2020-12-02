@@ -5,11 +5,11 @@ var position = document.getElementById('position');
 var resume = document.getElementById('reume');
 
 submit.addEventListener("click", ()=>{
-  let resume = `http://megan.local:5159/sendResume/${username.value}/${firstName.value}/${position.value}/${resume.value}`
-  fetch(resume)
+  let res = `http://megan.local:5159/sendResume/${username.value}/${firstName.value}/${position.value}/${resume.value}`
+  fetch(res)
       .then(response => response.json())
       .then(data => {
-        window.location.assign("SubmitPage.html")
-        console.log(resume);
+        window.location.assign("SubmitPage.html");
+        console.log(res);
       });
 });

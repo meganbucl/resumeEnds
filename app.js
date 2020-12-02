@@ -1,9 +1,9 @@
 var express = require("express");
 var app = express();
 var mysql = require("mysql");
-var {User} = require("./user.js");
+var {User, Resumes} = require("./user.js");
 var allUsers = [];
-var user = new User("Megan","gumbo")
+var user = new User("Megan","gumbo");
 
 
 app.get("/", (req,resp)=>{
