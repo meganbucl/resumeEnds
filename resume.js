@@ -9,7 +9,7 @@ submit.addEventListener("click", ()=>{
   fetch(res)
       .then(response => response.json())
       .then(data => {
-        window.location.assign("SubmitPage.html")
+        window.location.assign("SubmitPage.html");
         console.log(res);
       });
 });
