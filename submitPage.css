@@ -1,3 +1,29 @@
 body{
   background-color: #B5D2B6;
 }
+header{
+  background-color: #260414;
+  padding: 1px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Sansita Swashed', cursive;
+}
+h1{
+  text-decoration: underline;
+  color: #E7F9FF;
+}
+h2{
+  position: absolute;
+  left: 790px;
+  background-color: #260414;
+  padding: 10px;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Sansita Swashed', cursive;
+  width: 300px;
+  text-decoration: underline;
+  color: #E7F9FF;
+}
+p{
+  background-color: white;
+}
