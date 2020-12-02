@@ -1,8 +1,11 @@
+
+
 var replies = document.getElementById('replies');
 var name = document.getElementById('Name');
 var answers = document.getElementById('Anwers');
 
 answers.addEventListener("click", ()=>{
+  document.querySelector(".Replies").classList.remove("hidden")
   let rep = `http://megan.local:5159/seeReplies/${name.value}`
   console.log(rep)
   fetch(rep)
@@ -11,4 +14,4 @@ answers.addEventListener("click", ()=>{
         console.log(data);
         replies.innerHTML = data;
       });
-})
+});

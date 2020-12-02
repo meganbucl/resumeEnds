@@ -55,3 +55,6 @@ input{
   left: 790px;
   top: 250px;
 }
+.hidden{
+  display: none;
+}
