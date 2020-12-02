@@ -121,9 +121,11 @@ app.get("/seeReplies/:userName", (req,resp)=>{
   });
 
 });
-app.get("/sendResume/userName/link", (req,resp)=>{
+app.get("/sendResume/:userName/:name/:position/:link", (req,resp)=>{
   var userName = req.params.userName;
   var link = req.params.link;
+  var name = req.params.name;
+  var position = req.params.position;
 
   var connection = mysql.createConnection({
     host:"localhost",
@@ -139,7 +141,7 @@ app.get("/sendResume/userName/link", (req,resp)=>{
       return
     }
     console.log("There was success. We have the data!");
-    var selectQuery = `INSERT INTO Resumes(userName,resumeLink) VALUES("${userName}","${link}")`
+    var selectQuery = `INSERT INTO Resumes(userName,name,position,resumeLink) VALUES("${userName}","${name}","${position}","${link}")`
     connection.query(selectQuery, (error, result)=>{
       if(error) {
         console.log(error);
