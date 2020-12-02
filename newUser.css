@@ -1,0 +1,44 @@
+body{
+  background-color: #B5D2B6;
+}
+header{
+  background-color: #260414;
+  padding: 1px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Sansita Swashed', cursive;
+}
+footer{
+  all: unset;
+  position: absolute;
+  bottom: 100px;
+  left: 810px;
+  width: 200px;
+  padding: 15px;
+  background-color: #260414;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Sansita Swashed', cursive;
+}
+h1{
+  text-decoration: underline;
+  color: #E7F9FF;
+}
+input{
+  color: grey;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 10px;
+}
+a:visited{
+  color: #E7F9FF;
+}
+.CreateUser{
+  position: absolute;
+  top: 400px;
+  left: 820px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-bottom: 10px;
+}
