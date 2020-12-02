@@ -40,7 +40,7 @@ app.get("/newUser/:name/:password/:firstName/:lastName", (req,resp)=>{
         return
       }
       console.log(result);
-      resp.send("Did it, you are a official user now.");
+      resp.send(["Did it, you are a official user now."]);
       return
     });
   });
@@ -112,7 +112,7 @@ app.get("/seeReplies/:userName", (req,resp)=>{
       }
       console.log(result);
       if(result == ""){
-        resp.send("No Replies Yet.")
+        resp.send(["No Replies Yet."])
         return
       }
       resp.send(result);
